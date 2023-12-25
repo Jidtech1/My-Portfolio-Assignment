@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: #080808;
+  color: #ededed;
+}
+
+/* This section is nav bar  */
+.nav-ul {
+  position: absolute;
+  list-style: none;
+  top: 0;
+  left: 0;
+  margin: 100;
+  padding: 20px 20px;
+  width: 100%;
+  background: #080808;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  /* z-index: 100; */
+}
+
+.navbar a {
+  font-size: 18px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 50px;
+  transition: 3s;
+}
+
+.navbar a:hover {
+  color: #00abf0;
+  font-weight: 800;
+}
+
+.navbar a.active {
+  color: #00abf0;
+  font-weight: 800;
+}
+
+/* This is section for home */
+#Home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  background-color: #080808;
+}
+
+.Home-content {
+  max-width: 600px;
+}
+
+#home-img {
+  border-radius: 15%;
+  border-style: hidden;
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-right: 40px;
+  padding-left: 10px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  float: left;
+}
+
+.Home-content h1 {
+  font-size: 55px;
+  font-weight: 800;
+  color: #ededed;
+}
+
+.Home-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #00abf0;
+}
+
+.Home-content p {
+  font-size: 16px;
+  color: #ededed;
+}
+
+/* /* This is About Me section */
+.About-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #080808;
+}
+
+.brief {
+  justify-content: center;
+  padding: 15px;
+  text-align: justify;
+  line-height: 1.5rem;
+  font-size: 20px;
+}
+
+.About-content h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  font-weight: 700;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* My Skills */
+
+/* .my-skills {
+  margin-top: 40px;
+  background-color: #808080;
+  display: flex;
+  flex-direction: column;
+}
+
+.ime {
+  color: #080808;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.html {
+  color: #080808; */
+
+
+/* Contact section */
+
+.form-title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.contact {
+  border: 2px solid #080808;
+  margin-top: 40px;
+  width: 40%;
+  background-color: transparent;
+  color: #00abf0;
+  padding: 30px;
+}
+
+.form-field {
+  padding: 40px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #00abf0;
+  background-color: #ededed;
+
+}
+
+#Message {
+  width: 100%;
+  padding: 12px 20px;
+  height: 100px;
+  margin: 8px 0;
+  border: 1px solid #00abf0;
+  background-color: #ededed;
+}
+
+.btn {
+  background-color: #080808;
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  font-size: 12px;
+}
+
+.btn:hover {
+  background-color: #ededed;
+  color: #080808;
+  font-size: 25px;
+  transition: 3s;
+}
+
+/* Social Media Handles */
+.mre {
+  background-color: #00abf0;
+  color: #ededed;
+  text-align: center;
+  padding: 20px;
+}
+
+.social-media {
+  margin-top: 10px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #ededed;
+  font-size: 50px;
+  text-decoration: none;
+}
+
+.linkedin::before {
+  content: "\f08c";
+  font: var(--fa-font-brands);
+}
+
+.github::before {
+  content: "\f092";
+  font: var(--fa-font-brands);
+  size: 20%;
+}
+
+/* STYLE FOR MOBILE DEVICES  */
+@media (max-width: 750px) {
+
+  .About-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #080808;
+  }
+
+  .About-content p {
+    text-align: justify;
+    margin-bottom: 0;
+    line-height: 2;
+    font-size: 20px;
+  }
+
+  .contact {
+    border: 2px solid #080808;
+    margin-top: 40px;
+    width: 100%;
+    background-color: transparent;
+    color: #00abf0;
+    padding: 30px;
+  }
+}
